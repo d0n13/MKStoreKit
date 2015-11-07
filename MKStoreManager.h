@@ -54,6 +54,9 @@
 // These are the methods you will be using in your app
 + (MKStoreManager*)sharedManager;
 
+// Allow request of product data at any time
+-(void) requestProductData;
+
 // this is a class method, since it doesn't require the store manager to be initialized prior to calling
 + (BOOL) isFeaturePurchased:(NSString*) featureId;
 
